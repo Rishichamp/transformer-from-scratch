@@ -1,0 +1,12 @@
+.env
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+checkpoints/
+*.egg-info/
+.venv/
+.env.*
+!.env.example
+# Personal study notes stay local
+*.docx
