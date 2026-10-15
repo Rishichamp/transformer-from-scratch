@@ -48,7 +48,7 @@ async def lifespan(app: FastAPI):
     if ckpt_path.exists() and tok_path.exists():
         logger.info(f"Loading trained checkpoint from {ckpt_path}")
         tokenizer = CharTokenizer.load(str(tok_path))
-        checkpoint = torch.load(ckpt_path, map_location="cpu", weights_only=False)
+        checkpoint = torch.load(ckpt_path, map_location="cpu", weights_only=True)  # state dict + plain config only; never unpickle code
         config = ModelConfig(**checkpoint["config"])
         model = GPTLanguageModel(config)
         model.load_state_dict(checkpoint["model_state_dict"])
