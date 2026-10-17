@@ -71,3 +71,7 @@ Covers tensor shapes, attention rows summing to 1, the causal mask, weight tying
 [attention-interpretability-toolkit](https://github.com/Rishichamp/attention-interpretability-toolkit) analyses this model's attention patterns.
 
 Built as part of Module 5 of a Generative AI engineering programme.
+
+## Author
+
+**Rishi Singh** — [GitHub](https://github.com/Rishichamp)
